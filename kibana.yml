@@ -6,17 +6,20 @@ server.name: kibana
 server.host: "0"
 # Depends also on reverse proxy.
 # server.basePath: "/{{hostvars[groups["monitor"][0]].environment_name}}/kibana"
-server.basePath: "/kibana"
+#server.basePath: "/kibana"
 # elasticsearch.url: http://192.168.30.49:9200
-elasticsearch.url: http://elasticsearch:9200
+#elasticsearch.url: http://192.168.30.11:9200
+#elasticsearch.url: http.//localhost:9200
+elasticsearch.url: http://0.0.0.0:9200
+
 
 ## Disable X-Pack
 ## see https://www.elastic.co/guide/en/x-pack/current/xpack-settings.html
 ##     https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html#xpack-enabling
 #
-# xpack.security.enabled: false
-# xpack.monitoring.enabled: false
-# xpack.ml.enabled: false
-# xpack.graph.enabled: false
-# xpack.reporting.enabled: false
-# xpack.grokdebugger.enabled: false
+xpack.security.enabled: false
+xpack.monitoring.enabled: false
+xpack.ml.enabled: false
+xpack.graph.enabled: false
+xpack.reporting.enabled: false
+xpack.grokdebugger.enabled: false
