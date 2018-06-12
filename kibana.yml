@@ -8,9 +8,9 @@ server.host: "0"
 # server.basePath: "/{{hostvars[groups["monitor"][0]].environment_name}}/kibana"
 #server.basePath: "/kibana"
 # elasticsearch.url: http://192.168.30.49:9200
-#elasticsearch.url: http://192.168.30.11:9200
+elasticsearch.url: http://192.168.30.11:9200
 #elasticsearch.url: http.//localhost:9200
-elasticsearch.url: http://0.0.0.0:9200
+#elasticsearch.url: http://0.0.0.0:9200
 
 
 ## Disable X-Pack
